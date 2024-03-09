@@ -9,7 +9,7 @@ import { doc, getDoc, getFirestore } from "firebase/firestore"
 
 import { ref, onValue } from 'firebase/database'
 
-import Form from './layout/form'
+import Form from './layout/Form'
 import UserScreen from './layout/Bridge/UserScreen'
 import Login from './layout/Login/Login'
 import SignIn from './layout/SignIn/Signin'
