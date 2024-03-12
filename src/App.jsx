@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Route, Routes, useNavigate, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, useNavigate, Navigate, redirect } from 'react-router-dom'
 
 import reactLogo from './assets/react.svg'
 import './App.css'
@@ -22,7 +22,9 @@ export default function App() {
   const [user, setuser] = useState(null)
 
   const db = getFirestore()
-  const FirebaseAuth = getAuth();
+  const FirebaseAuth = getAuth()
+
+  // const navigate = useNavigate()
 
   const getUser = async (data) => {
 
@@ -44,6 +46,7 @@ export default function App() {
       } else {
         // User is signed out
         setauth(null)
+        console.log("signed out")
       }
     })
   }, [FirebaseAuth]);
