@@ -20,7 +20,7 @@ const ContentArea = () => {
     {
       title: 'Google Sheets',
       description: 'Google Sheets is a cloud-based spreadsheet software for real-time collaboration. It offers features like data organization, calculations, and sharing, making it ideal for personal and professional use.',
-      link: '/google-sheets',
+      link: 'https://docs.google.com/spreadsheets/d/1a2MqLkmhtlnw9iW7Ym3N3AD7jhj28NhzwqIOUdNvjpg/edit?usp=sharing',
       image: 'https://firebasestorage.googleapis.com/v0/b/the-bridge-535cf.appspot.com/o/Google%20Sheets.png?alt=media&token=eebc4599-26ff-4607-aac6-e78f0c13d6d0',
       company: 'Google'
     },
