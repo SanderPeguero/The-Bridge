@@ -61,7 +61,7 @@ export default function App() {
       }}>
         <Router>
           <Routes>
-            {/* <Route exact path='/signin' element={<SignIn />}></Route> */}
+            <Route exact path='/signin' element={<SignIn />}></Route>
             {
               user ? user.role == 'user' ?
                 (
@@ -87,7 +87,7 @@ export default function App() {
             }
             {!auth ? <Route path='/login' element={<Login />} /> : null}
           </Routes>
-          {auth ? null : <Navigate to='/login' />}
+          {/* {auth ? null : <Navigate to='/login' />} */}
         </Router>
       </div>
     </ContextVariable.Provider>
